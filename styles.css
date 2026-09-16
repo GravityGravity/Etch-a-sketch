@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    text-align: center;
 }
 #title {
     color: white;
@@ -10,12 +11,18 @@ body {
     font-size: xx-large;
 }
 
+#main {
+    display: flex;
+    justify-content: center;
+}
+
 #container {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
+    height: 85vh;
+    width: 85vw;
     outline: 1px solid blue;
-
 }
 
 /* DEBUG */

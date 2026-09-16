@@ -13,7 +13,9 @@ body {
 
 #main {
     display: flex;
-    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: gray;
 }
 
 #container {
@@ -21,9 +23,11 @@ body {
     flex-wrap: wrap;
     margin: 10px;
     height: 85vh;
-    width: 85vw;
+    width: 85vh;
     outline: 1px solid blue;
 }
+
+#options
 
 /* DEBUG */
 #container .cell {

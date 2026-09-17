@@ -13,7 +13,7 @@ A browser-based recreation of the classic Etch-A-Sketch toy, built with vanilla 
 
 ## Tech Stack
 
-HTML5, CSS3, and vanilla JavaScript (ES6+) — no build tools, frameworks, or dependencies.
+HTML5, CSS3, and vanilla JavaScript 
 
 ## Usage
 

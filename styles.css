@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     text-align: center;
+    background-color: gray;
 }
 #title {
     color: white;
@@ -12,7 +13,6 @@ body {
 }
 
 #main {
-    min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;

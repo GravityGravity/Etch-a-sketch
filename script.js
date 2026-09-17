@@ -3,6 +3,7 @@
 
 // Mutable Vars
 let gridSize = 16; //cells per row and per column
+let color = 'black'
 
 // Queries
 const sketchContainer = document.querySelector('#container');
@@ -15,13 +16,14 @@ function createRow () {
     for (let i = 0; i < gridSize; i++){
         let cell = document.createElement('div');
         cell.classList.add('cell');
+        cell.style.backgroundColor = 'white';
         row.append(cell);
     }
 
     return row;
 }
 
-function createSketchGrid () {
+function generateSketchGrid () {
 
     for (let i = 0; i < gridSize; i++) {
         sketchContainer.appendChild(
@@ -30,5 +32,16 @@ function createSketchGrid () {
     }
 }
 
+function colorTarget (event) {
+    console.log(event); 
+    event.target.style.backgroundColor = color;
+}
+
+// Events
+sketchContainer.addEventListener('click', (event) => {
+    console.log(event); 
+    event.target.style.backgroundColor = color;
+}); 
+
 // Code
-if (!sketchContainer.hasChildNodes()) createSketchGrid();
+if (!sketchContainer.hasChildNodes()) generateSketchGrid();

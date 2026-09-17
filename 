@@ -1,0 +1,30 @@
+[33mcommit 831240ff77706e338835b968cd5d5f0d434a62c7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/feature[m[33m, [m[1;32mfeature[m[33m)[m
+Author: Grav <154651849+GravityGravity@users.noreply.github.com>
+Date:   Wed Sep 16 20:08:11 2026 -0400
+
+    feat: Add sketch grid creation
+    
+    Add grid creation in JS on application startup.
+
+[33mcommit fd1295d2f28e4a8bd9f402eb8df30faabb90640a[m
+Author: Grav <154651849+GravityGravity@users.noreply.github.com>
+Date:   Wed Sep 16 18:33:08 2026 -0400
+
+    Draft sketch container cell division + changes...
+    
+    refactor: move sketch options into main for consistent UI placement
+    feat: add initial cell division simulation
+    fix: limit sketch container width to sketch height to prevent container
+    from reaching out of window viewport
+
+[33mcommit ded0bd3f60c295b8c425718871bbfe4a53faed0f[m
+Author: Grav <154651849+GravityGravity@users.noreply.github.com>
+Date:   Wed Sep 16 17:55:58 2026 -0400
+
+    change sketch size to 85% of visisble screen
+
+[33mcommit fd1fe305e1e9e7be70b0a0cb961826cde8e55692[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Grav <154651849+GravityGravity@users.noreply.github.com>
+Date:   Tue Sep 15 21:10:05 2026 -0400
+
+    init structure for sketching

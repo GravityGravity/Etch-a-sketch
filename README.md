@@ -1,6 +1,6 @@
 # Etch-A-Sketch
 
-![Etch-A-Sketch banner](banner.jpg)
+![Etch-A-Sketch banner](banner.png)
 
 A browser-based recreation of the classic Etch-A-Sketch toy, built with vanilla HTML, CSS, and JavaScript. The drawing surface is a dynamically generated grid of `div` elements that darken on hover to simulate the stylus tracing a line.
 

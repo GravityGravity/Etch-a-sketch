@@ -7,8 +7,10 @@ let color = 'black'
 
 // Queries
 const sketchContainer = document.querySelector('#container');
-// Functions
+const clearBtn = document.querySelector('#clear-btn');
+const gridSizeBtn = document.querySelector('#grid-size-btn');
 
+// Functions
 function createRow () {
     const row = document.createElement('div');
     row.classList.add('row');
@@ -19,7 +21,6 @@ function createRow () {
         cell.style.backgroundColor = 'white';
         row.append(cell);
     }
-
     return row;
 }
 
@@ -33,15 +34,19 @@ function generateSketchGrid () {
 }
 
 function colorTarget (event) {
-    console.log(event); 
     event.target.style.backgroundColor = color;
 }
 
 // Events
-sketchContainer.addEventListener('click', (event) => {
-    console.log(event); 
+sketchContainer.addEventListener('pointerover', (event) => {
     event.target.style.backgroundColor = color;
 }); 
+
+clearBtn.addEventListener('click', () => {
+    sketchContainer.replaceChildren();
+    generateSketchGrid();
+
+});
 
 // Code
 if (!sketchContainer.hasChildNodes()) generateSketchGrid();

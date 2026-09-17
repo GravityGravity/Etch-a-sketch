@@ -38,7 +38,11 @@ function colorTarget (event) {
 }
 
 // Events
-sketchContainer.addEventListener('pointerover', (event) => {
+sketchContainer.addEventListener('mouseover', (event) => {
+    if(event.buttons) event.target.style.backgroundColor = color;
+}); 
+
+sketchContainer.addEventListener('mousedown', (event) => {
     event.target.style.backgroundColor = color;
 }); 
 
@@ -46,6 +50,13 @@ clearBtn.addEventListener('click', () => {
     sketchContainer.replaceChildren();
     generateSketchGrid();
 
+});
+
+gridSizeBtn.addEventListener('click', () => {
+    let input = prompt('Please input a positive integer grid size');
+    gridSize = (input <= 0) ? 1 : +input;
+    if (!typeof input) gridSize = 1;
+    clearBtn.click();
 });
 
 // Code

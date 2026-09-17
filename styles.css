@@ -1,40 +1,70 @@
+/* ==========================================================================
+   Base / Reset
+   ========================================================================== */
+
 body {
     margin: 0px;
     text-align: center;
     background-color: gray;
 }
-#title {
-    color: white;
-    background-color: rgb(175, 131, 131);
-    margin: 0px;
-    padding: 8px;
-    text-align: center;
-    font-size: xx-large;
-}
+
+/* ==========================================================================
+   Layout — Page Structure
+   ========================================================================== */
 
 #main {
+    height: 100%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     background-color: gray;
-    height: 100%;
 }
 
-#container {
+#title {
+    margin: 0px;
+    padding: 8px;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    background-color: rgb(175, 131, 131);
+}
+
+#options {
     display: flex;
-    flex-direction: column;
+    gap: 100px;
+    margin: 0 0 10px 0;
+}
+
+#options button {
+    background-color: antiquewhite;
+    border: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+    cursor: pointer;
+
+    
+}
+
+/* ==========================================================================
+   Grid Component
+   ========================================================================== */
+
+#container {
     margin: 10px;
     height: 85vh;
     width: 85vh;
+    display: flex;
+    flex-direction: column;
     outline: 1px solid blue;
 }
 
 .row {
+    flex: 1 1 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: stretch;
-    flex: 1 1 0;
 }
 
 .cell {
@@ -42,11 +72,10 @@ body {
 }
 
 
-#options {
+/* ==========================================================================
+   Debug
+   ========================================================================== */
 
-}
-
-/* DEBUG */
 #container .cell {
     outline: 1px solid black;
 }

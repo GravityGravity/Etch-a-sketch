@@ -54,7 +54,7 @@ clearBtn.addEventListener('click', () => {
 
 gridSizeBtn.addEventListener('click', () => {
     let input = prompt('Please input a positive integer grid size');
-    gridSize = (input <= 0) ? 1 : +input;
+    gridSize = (input <= 0 || input > 100) ? 1 : +input;
     if (!typeof input) gridSize = 1;
     clearBtn.click();
 });
